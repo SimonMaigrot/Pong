@@ -1,4 +1,5 @@
 import pygame
+import random
 
 class Rectangle(pygame.sprite.Sprite):
     def __init__(self):
@@ -12,4 +13,6 @@ class Rectangle(pygame.sprite.Sprite):
         self.droite_rect = self.droite.get_rect()
         self.droite_rect.x = 1882
         self.droite_rect.y = 250
-        self.speed = 2
+        self.speed = 3
+        self.direction = random.randint(0, 1)
+
